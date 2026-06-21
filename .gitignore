@@ -1,0 +1,30 @@
+# Cryptographic material
+certs/
+*.pem
+*.key
+*.crt
+
+# Generated evidence and packages
+evidence.bin
+package*.json
+crl.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+ENV/
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
