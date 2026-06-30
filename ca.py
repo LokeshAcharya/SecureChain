@@ -23,10 +23,6 @@ def setup_dirs():
     """Ensures all required directories exist."""
     os.makedirs(EXAMINERS_DIR, exist_ok=True)
     os.makedirs(CRL_DIR, exist_ok=True)
-    
-    # Initialize empty CRL if it doesn't exist
-    if not os.path.exists(CRL_PATH):
-        _, ca_cert = generate_root_ca() # Generates CA and initial CRL
 
 def generate_root_ca():
     """Generates the Root CA, encrypts the key at rest, and creates the initial CRL."""
